@@ -1,0 +1,29 @@
+<html lang="en">
+    <style>
+        .log{
+            display:block;
+            width:50%;
+            font-size: 50px;
+            text-align: center;
+        }
+        
+    </style>
+<head>
+    <script>
+        function validate(){
+            var age=parseInt(prompt("Enter age"));
+            var ans="not eigible";
+            if(age>=18){
+                ans="eligible";
+            }
+            return(ans);
+        }
+    </script>
+</head>
+<body class="log">
+    <script>
+        var status=validate();
+        document.write("You are <b>"+status+"</b> for Vote");
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+  body {
+    font-family: sans-serif;
+    background-color: whitesmoke;
+  }
+
+  form,
+  fieldset {
+    background-color: cadetblue;
+    text-align: center;
+  }
+
+  .l2 {
+    width: 40%;
+    height: 70%;
+    padding: 70px;
+  }
+</style>
+
+<body>
+  <form>
+    <fieldset>
+      <h1>Permanent address</h1>
+      <input class="l2" type="text" name="shippingname">
+      <div>
+        <input type="checkbox" name="billingtoo" onclick="FillBilling(this.form)">
+        <em>Check this box if Permanent Address and Local Address are the same.</em>
+      </div>
+      <h2>Local Address</h2>
+      <div>
+        <input class="l2" type="text" name="billingname">
+      </div>
+      <script type="text/javascript" src="address.js"></script>
+    </fieldset>
+  </form>
+</body>
+
+</html>

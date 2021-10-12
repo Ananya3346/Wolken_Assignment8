@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+      <script>
+	let MAX_CHAR = 26;
+	function sortString(str)
+	{
+		let charCount = new Array(MAX_CHAR);
+		charCount.fill(0);
+		for (let i = 0; i < str.length; i++)
+			charCount[str[i].charCodeAt()-'a'.charCodeAt()]++;
+		for (let i=0;i<MAX_CHAR;i++)
+			for (let j=0;j<charCount[i];j++)
+				document.write(String.fromCharCode('a'.charCodeAt()+i) );
+	}
+	let s = "ananya";
+	sortString(s);
+</script>
+
+    </body>
+</html>
