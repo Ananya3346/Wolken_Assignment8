@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>Interest Calculator</title>
+    <style>
+        .l1 {
+            background-color: blue;
+            width: 100%;
+            border: 4px;
+        }
+
+        .l2 {
+            text-align: center;
+            padding: 50px;
+            width: 100%;
+            margin-left: 35%;
+        }
+
+        .l3 {
+            width: 150px;
+            height:40px;
+            text-align: center;
+            margin-left: 58%;
+        }
+
+        .l4 {
+            border:100%;
+        }
+    </style>
+</head>
+<body class="l2">
+    <script type="text/javascript" src="address2.js"></script>
+    <table>
+        <tr class="l2">
+            <td colspan="2">
+                <h1 class="l1">Simple Interest Calculator</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>Principle ,<i>P</i>: </td>
+            <td><input id="p"></td>
+        </tr>
+        <tr>
+            <td>Annual rate,<i>r</i> </td>
+            <td><input id="r"></td>
+        </tr>
+        <tr>
+            <td>Time, <i>years</i> </td>
+            <td><input id="n"></td>
+        </tr>
+        <tr>
+            <td>+Added monthly:
+            <td><input id="a"></td>
+            </td>
+        </tr>
+        <tr class="l2">
+            <td><button class="l3" onclick="calculate()">Calculate</button></td>
+        </tr>
+        <tr>
+            <td>
+                <p id="result"></p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
